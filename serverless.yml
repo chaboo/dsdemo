@@ -1,0 +1,47 @@
+service: dsdemo
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  timeout: 60
+  memorySize: 3008
+  stage: dev
+  region: us-east-1
+  deploymentBucket:
+    name: my.serverless.deploys
+
+package:
+  exclude:
+    - node_modules/puppeteer/.local-chromium/**
+
+functions:
+  graphql:
+    handler: index.handler
+    events:
+      - http:
+          path: graphql
+          method: post
+          cors: true
+
+  playground:
+    handler: index.handler
+    events:
+      - http:
+          path: playground
+          method: get
+
+  # graphiql:
+  #   handler: index.handler
+  #   events:
+  #     - http:
+  #         path: graphiql
+  #         method: get
+
+plugins:
+  - serverless-webpack
+  - serverless-offline
+
+custom:
+  webpack:
+    webpackConfig: ./webpack.config.js
+    includeModules: true

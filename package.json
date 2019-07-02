@@ -1,0 +1,26 @@
+{
+  "devDependencies": {
+    "babel-loader": "^8.0.5",
+    "serverless-offline": "^3.31.3",
+    "serverless-webpack": "^5.2.0",
+    "webpack": "^4.28.3",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "@serverless-chrome/lambda": "^1.0.0-55",
+    "apollo-server-express": "^2.3.1",
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.4",
+    "express-graphiql-middleware": "^1.0.4",
+    "express-graphql": "^0.8.0",
+    "graphiql-explorer": "^0.3.7",
+    "graphql": "^14.0.2",
+    "graphql-playground-middleware-express": "^1.7.8",
+    "lodash": "^4.17.11",
+    "moment": "^2.23.0",
+    "puppeteer-core": "^1.14.0",
+    "serverless-http": "^1.8.0",
+    "superagent": "^4.1.0"
+  }
+}
