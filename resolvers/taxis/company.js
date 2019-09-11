@@ -47,9 +47,9 @@ module.exports = async (data, context) => {
       }
     })
     .catch(response => {
-        //handle error
-        console.log("ERROR");
-        console.log(response);
+      //handle error
+      console.log("ERROR");
+      console.log(response);
     });
 
   return company;

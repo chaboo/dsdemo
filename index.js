@@ -91,7 +91,9 @@ const typeDefs = gql`
     companyOfficialUnid: String,
     statementCashFlowMethod: String,
     statementDate: String,
-    balanceStatsSheet: BalanceStatsSheet
+    balanceStatsSheet: BalanceStatsSheet,
+    balanceSuccessSheet: [BalanceSuccessSheet]
+
   }
 
   type BalanceStatsSheet {
@@ -282,6 +284,13 @@ const typeDefs = gql`
     field062: String
   }
 
+  type BalanceSuccessSheet {
+    ordinal_number: String,
+    description: String,
+    current_year: String,
+    last_year: String
+  }
+
   "Poreska uprava"
   type Taxis {
     institution: String,
@@ -340,9 +349,11 @@ const resolvers = {
   FinancialStatementDetails: {
     balanceStatsSheet: (statementDetails, _, __) => {
       return statementDetails.balanceStatsSheet;
+    },
+    balanceSuccessSheet: (statementDetails, _, __) => {
+      return statementDetails.balanceSuccessSheet
     }
   }
-
 };
 
 const app = express();
