@@ -17,7 +17,7 @@
     "graphiql-explorer": "^0.3.7",
     "graphql": "^14.0.2",
     "graphql-playground-middleware-express": "^1.7.8",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.13",
     "moment": "^2.23.0",
     "puppeteer-core": "^1.14.0",
     "serverless-http": "^1.8.0",
