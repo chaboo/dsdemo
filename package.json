@@ -9,7 +9,7 @@
   "dependencies": {
     "@serverless-chrome/lambda": "^1.0.0-55",
     "apollo-server-express": "^2.3.1",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "cheerio": "^1.0.0-rc.2",
     "express": "^4.16.4",
     "express-graphiql-middleware": "^1.0.4",
