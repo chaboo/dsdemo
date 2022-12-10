@@ -11,7 +11,7 @@
     "apollo-server-express": "^2.3.1",
     "axios": "^0.18.0",
     "cheerio": "^1.0.0-rc.2",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "express-graphiql-middleware": "^1.0.4",
     "express-graphql": "^0.8.0",
     "graphiql-explorer": "^0.3.7",
